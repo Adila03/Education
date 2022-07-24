@@ -1,0 +1,47 @@
+@mixin desktop {
+    @media (max-width: #{$large-device-width}) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (max-width: #{$medium-device-width}) {
+      @content;
+    }
+  }
+  
+  @mixin mobile {
+    @media (max-width: #{$small-device-width}) {
+      @content;
+    }
+  }
+  
+  @mixin extra-small-mobile {
+    @media (max-width: #{$extra-small-device-width}) {
+      @content;
+    }
+  }
+
+
+  @mixin pic{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 522px;
+  }
+
+  @mixin button{
+            width: 93px;
+            height: 36px;
+            outline: none;
+            border-radius: 3px;
+  }
+  @mixin box{
+    display: flex;
+    width: 500px;
+    float: left;
+    margin: 40px 0px 0px 34px;
+  }
+  @mixin display1{
+    display: flex;
+    justify-content: center;
+}
